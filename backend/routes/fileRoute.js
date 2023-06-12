@@ -28,15 +28,31 @@ router.post('/upload', upload.single('file'), (req, res) => {
 
 
 // Route for getting all uploaded files
+// router.get('/files', (req, res) => {
+//   const directoryPath = path.join(__dirname, '../uploads');
+//   fs.readdir(directoryPath, function (err, files) {
+//     if (err) {
+//       return res.status(500).send({ message: 'Unable to read files' });
+//     }
+//     return res.status(200).send(files);
+//   });
+// });
+
+// Route for getting all uploaded files
 router.get('/files', (req, res) => {
   const directoryPath = path.join(__dirname, '../uploads');
   fs.readdir(directoryPath, function (err, files) {
-    if (err) {
-      return res.status(500).send({ message: 'Unable to read files' });
-    }
-    return res.status(200).send(files);
+  if (err) {
+  return res.status(500).send({ message: 'Unable to read files' });
+  }
+  let newFiles = []
+  files.map((data) => {
+  if (data.startsWith(req.user.id)) newFiles.push(data)
+  })
+  
+  return res.status(200).send(newFiles);
   });
-});
+  });
 
 // Route for downloading a file
 router.get('/download/:filename', (req, res) => {

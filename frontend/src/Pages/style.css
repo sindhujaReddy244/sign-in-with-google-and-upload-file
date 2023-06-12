@@ -1,0 +1,74 @@
+/* .googleButton {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    border: 1px solid blue !important;
+  }
+  
+  .googleButton:hover {
+      border: 5px solid blue !important;
+    }
+  
+  .googleImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .loginPage{
+      height: 50px;
+      width: 300px;
+      margin-top: 300px !important;
+      margin: auto;
+       background-color: aqua; 
+  } 
+  */
+
+  .loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+  
+  .googleButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    border: 1px solid blue !important;
+    background-color: white;
+    color: blue;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: border-width 0.3s ease;
+  }
+  
+  .googleButton:hover {
+    border-width: 5px !important;
+  }
+  
+  .googleImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .uploadSection{
+      width: 500px;
+      height: 100px;
+      margin: auto;
+  }
+  
+  .list{
+      width: 50%;
+      margin: auto;
+  }
+  
+  .listItem:hover{
+      background: skyblue;
+  }

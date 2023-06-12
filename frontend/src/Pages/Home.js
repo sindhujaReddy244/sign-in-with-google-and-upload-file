@@ -44,7 +44,7 @@ const Home = ({ user }) => {
         getFileList();
     }, []);
 
-    console.log(fileList);
+    // console.log(fileList);
 
     const handleLogout = () => {
         window.open('http://localhost:8080/auth/logout', "_self");
@@ -64,11 +64,14 @@ const Home = ({ user }) => {
             </div>
             {fileList.map((filename, i) => (
                 <div key={i} >
-                    {filename.startsWith(user.sub) &&
+                    {/* {filename.startsWith(user.sub) &&
                         <ListGroup className='list' role='button' onClick={() => handleFileDownload(filename)}>
                             <ListGroup.Item className='listItem'>{filename.replace(/^\w+\s/, '')} </ListGroup.Item>
                         </ListGroup>
-                    }
+                    } */}
+                    <ListGroup className='list' role='button' onClick={() => handleFileDownload(filename)}>
+                        <ListGroup.Item className='listItem'>{filename.replace(/^\w+\s/, '')} </ListGroup.Item>
+                    </ListGroup>
                 </div>
             ))}
         </>

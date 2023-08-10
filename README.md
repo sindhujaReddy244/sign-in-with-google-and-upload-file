@@ -1,7 +1,7 @@
 
 # Sign-In-using-google-and-file-uploader
 
-This is a web application that allows users to sign in using Google authentication and upload files to a local directory of a web server. Users can view a list of all files uploaded using the same uploader and download files by clicking on them. The application is built using React and Node.js.
+This is a web application that allows users to sign in using Google authentication and upload files to a local directory of a web server. Users can view a list of all files uploaded using the same uploader and download files by clicking on them. The application is built using React JS and Node.js.
 
 ## Getting Started
 To get started with the project, clone the repository to your local machine and navigate to the project directory.

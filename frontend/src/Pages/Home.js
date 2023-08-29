@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import fileDownload from 'js-file-download'
@@ -72,8 +73,5 @@ const Home = ({ user }) => {
         </>
     );
 }
-
-
-
 
 export default Home

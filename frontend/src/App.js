@@ -10,7 +10,6 @@ function App() {
 
   const [user, setUser] = useState(null);
 
-
   const getUser = async () => {
     try {
       const url = `http://localhost:8080/auth/login/success`;
